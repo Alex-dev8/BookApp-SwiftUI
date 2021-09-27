@@ -17,8 +17,8 @@ struct LibraryView: View {
             
             GeometryReader { geo in
                 ScrollView {
-                    LazyVStack(spacing: 40) {
-                        ForEach(0..<model.books.count) { index in
+                    LazyVStack(spacing: 1) {
+                        ForEach(0..<model.books.count, id:\.self) { index in
                             Button(action: {
                                 
                             }, label: {
@@ -27,36 +27,42 @@ struct LibraryView: View {
                                         .foregroundColor(.white)
                                     
                                     VStack(alignment: .leading) {
-                                        Text("Hello")
+                                        Text(model.books[index].title)
+                                            .padding(.leading, 8)
+                                            .padding(.top, 8)
                                             .font(.largeTitle)
                                             .foregroundColor(.primary)
-                                        Text("world")
+                                            .multilineTextAlignment(.leading)
+                                        Text(model.books[index].author)
+                                            .padding(.leading, 8)
                                             .font(.subheadline)
                                             .foregroundColor(.primary)
-                                        Image("cover1")
+                                            .multilineTextAlignment(.leading)
+                                        Image("cover\(index + 1)")
                                             .resizable()
-                                            .aspectRatio(contentMode: .fit)
-                                            .frame(width: geo.size.width - 200, height: geo.size.height - 400, alignment: .center)
+                                            .aspectRatio(contentMode: .fill)
+                                            .padding(40)
                                         
                                     }
+                                    
                                     
                                 }
                                 .cornerRadius(12)
                                 .buttonStyle(.plain)
                                 .padding(.top)
-                                .frame(width: geo.size.width - 80, height: geo.size.height - 200, alignment: .center)
+                                
                                 .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5), radius: 8, x: -5, y: 5)
                                 
                                 
                             })
                             
                         }
-                      
+                        .padding(40)
                     }
                     
                 }// END: Scroll View
                 
-            }
+            } //END: Geometry Reader
             
             .navigationTitle("My Library")
         }// END: NavView
