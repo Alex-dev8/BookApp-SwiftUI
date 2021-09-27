@@ -42,24 +42,17 @@ struct LibraryView: View {
                                             .resizable()
                                             .aspectRatio(contentMode: .fill)
                                             .padding(40)
-                                        
                                     }
-                                    
-                                    
                                 }
                                 .cornerRadius(12)
                                 .buttonStyle(.plain)
                                 .padding(.top)
                                 
                                 .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5), radius: 8, x: -5, y: 5)
-                                
-                                
                             })
-                            
                         }
                         .padding(40)
                     }
-                    
                 }// END: Scroll View
                 
             } //END: Geometry Reader
