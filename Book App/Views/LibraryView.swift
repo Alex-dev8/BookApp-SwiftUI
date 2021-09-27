@@ -17,10 +17,10 @@ struct LibraryView: View {
             
             GeometryReader { geo in
                 ScrollView {
-                    LazyVStack(spacing: 1) {
+                    LazyVStack(spacing: 30) {
                         ForEach(0..<model.books.count, id:\.self) { index in
                             Button(action: {
-                                
+                              
                             }, label: {
                                 ZStack {
                                     Rectangle()
@@ -44,20 +44,26 @@ struct LibraryView: View {
                                             .padding(40)
                                     }
                                 }
+                                
                                 .cornerRadius(12)
                                 .buttonStyle(.plain)
                                 .padding(.top)
                                 
                                 .shadow(color: Color(.sRGB, red: 0, green: 0, blue: 0, opacity: 0.5), radius: 8, x: -5, y: 5)
                             })
+                                .tag(index)
+                                .padding(.horizontal, 30.0)
+                                
+                                
                         }
-                        .padding(40)
+                        
                     }
                 }// END: Scroll View
                 
             } //END: Geometry Reader
             
             .navigationTitle("My Library")
+            
         }// END: NavView
         
     }
