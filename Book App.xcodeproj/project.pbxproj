@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAEF502A2701DBAA0030D955 /* Book_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF50292701DBAA0030D955 /* Book_AppApp.swift */; };
-		FAEF502C2701DBAA0030D955 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF502B2701DBAA0030D955 /* ContentView.swift */; };
+		FAEF502C2701DBAA0030D955 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF502B2701DBAA0030D955 /* LibraryView.swift */; };
 		FAEF502E2701DBAC0030D955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEF502D2701DBAC0030D955 /* Assets.xcassets */; };
 		FAEF50312701DBAC0030D955 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEF50302701DBAC0030D955 /* Preview Assets.xcassets */; };
 		FAEF503D2701DE160030D955 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = FAEF503C2701DE160030D955 /* Data.json */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		FAEF50262701DBAA0030D955 /* Book App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF50292701DBAA0030D955 /* Book_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_AppApp.swift; sourceTree = "<group>"; };
-		FAEF502B2701DBAA0030D955 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAEF502B2701DBAA0030D955 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
 		FAEF502D2701DBAC0030D955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAEF50302701DBAC0030D955 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FAEF503C2701DE160030D955 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
@@ -82,7 +82,7 @@
 		FAEF50372701DD740030D955 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FAEF502B2701DBAA0030D955 /* ContentView.swift */,
+				FAEF502B2701DBAA0030D955 /* LibraryView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,7 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAEF502C2701DBAA0030D955 /* ContentView.swift in Sources */,
+				FAEF502C2701DBAA0030D955 /* LibraryView.swift in Sources */,
 				FAEF502A2701DBAA0030D955 /* Book_AppApp.swift in Sources */,
 				FAEF50412701E0680030D955 /* BookModel.swift in Sources */,
 				FAEF503F2701DF860030D955 /* Book.swift in Sources */,
