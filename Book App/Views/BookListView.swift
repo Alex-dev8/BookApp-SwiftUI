@@ -19,9 +19,6 @@ struct BookListView: View {
                         NavigationLink (destination: BookDetailView(book: book)) {
                             BookCard(book: book)
                         }
-                        NavigationLink(destination: EmptyView()) {
-                            EmptyView()
-                        }
                     }
                 }
                 

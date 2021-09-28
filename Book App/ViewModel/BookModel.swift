@@ -13,4 +13,11 @@ class BookModel: ObservableObject {
     init() {
         self.books = DataService.getLocalData()
     }
+    
+    func updateRating(forID: Int, rating: Int) {
+        if let index = books.firstIndex(where: { $0.id == forID }) {
+            books[index].rating = rating
+        }
+    }
+    
 }
