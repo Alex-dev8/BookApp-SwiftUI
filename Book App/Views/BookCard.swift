@@ -19,25 +19,34 @@ struct BookCard: View {
             
             VStack(alignment: .leading) {
                 Spacer()
-                Text(book.title)
-                    .foregroundColor(.black)
-                    
-                    .bold()
-                    .padding([.top, .leading])
-                    .font(.largeTitle)
-                    .multilineTextAlignment(.leading)
+                HStack {
+                    Text(book.title)
+                        .foregroundColor(.black)
+                        .bold()
+                        .padding([.top, .leading])
+                        .font(.largeTitle)
+                        .multilineTextAlignment(.leading)
+                    Spacer()
+                    Image(systemName: "star")
+                        
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 30, height: 30)
+                        .foregroundColor(.yellow)
+                        .padding(.trailing)
+                }
                 Text(book.author)
                     .foregroundColor(.black)
                     .italic()
                     .padding(.leading)
-                    
+                
                 Spacer()
                 Image("cover\(book.id)")
                     .resizable()
                     .scaledToFit()
                     .padding()
             }
-                
+            
         }
         .padding()
     }

@@ -20,4 +20,10 @@ class BookModel: ObservableObject {
         }
     }
     
+    func isFavourite(forID: Int, favourite: Bool) {
+        if let index = books.firstIndex(where: { $0.id == forID }) {
+            books[index].isFavourite = favourite
+        }
+    }
+    
 }

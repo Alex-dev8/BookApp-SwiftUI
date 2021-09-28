@@ -12,6 +12,7 @@ struct BookDetailView: View {
     
     var book: Book
     @State private var rating = 3
+    @State private var isFavourite = false
     
     var body: some View {
         VStack {
@@ -27,9 +28,21 @@ struct BookDetailView: View {
                 }
             }
             Text("Mark for later!")
-            Image(systemName: "star.fill")
-                .foregroundColor(.yellow)
-                .padding()
+            
+            Button {
+                isFavourite.toggle()
+                model.isFavourite(forID: book.id, favourite: isFavourite)
+            } label: {
+                if isFavourite {
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                        .padding()
+                } else {
+                    Image(systemName: "star")
+                        .foregroundColor(.yellow)
+                        .padding()
+                }
+            }
             Text("Rate Amazing Words")
             Picker("Rate app", selection: $rating) {
                 ForEach(1..<6) { index in
@@ -46,9 +59,10 @@ struct BookDetailView: View {
         .navigationTitle(book.title)
         .onAppear {
             rating = book.rating
+            isFavourite = book.isFavourite
         }
     }
-        
+    
 }
 
 struct BookDetailView_Previews: PreviewProvider {
