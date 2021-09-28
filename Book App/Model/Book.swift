@@ -8,11 +8,11 @@
 import Foundation
 
 class Book: Identifiable, Decodable {
-    var title: String
-    var author: String
-    var isFavourite: Bool
-    var currentPage: Int
-    var rating: Int
-    var id: Int
-    var content: [String]
+    var title = "Title"
+    var author = "Author"
+    var isFavourite = true
+    var currentPage = 0
+    var rating = 3
+    var id = 1
+    var content = ["I am a test book."]
 }
