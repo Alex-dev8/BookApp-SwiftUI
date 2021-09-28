@@ -16,7 +16,12 @@ struct BookListView: View {
             ScrollView {
                 LazyVStack {
                     ForEach(model.books) { book in
-                        BookCard(book: book)
+                        NavigationLink (destination: BookDetailView(book: book)) {
+                            BookCard(book: book)
+                        }
+                        NavigationLink(destination: EmptyView()) {
+                            EmptyView()
+                        }
                     }
                 }
                 

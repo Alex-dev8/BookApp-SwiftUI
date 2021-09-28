@@ -20,10 +20,14 @@ struct BookCard: View {
             VStack(alignment: .leading) {
                 Spacer()
                 Text(book.title)
+                    .foregroundColor(.black)
+                    
                     .bold()
                     .padding([.top, .leading])
                     .font(.largeTitle)
+                    .multilineTextAlignment(.leading)
                 Text(book.author)
+                    .foregroundColor(.black)
                     .italic()
                     .padding(.leading)
                     

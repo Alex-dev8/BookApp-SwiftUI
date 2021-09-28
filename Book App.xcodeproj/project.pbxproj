@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FA2B84AB2703446700217339 /* BookListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B84AA2703446700217339 /* BookListView.swift */; };
 		FA2B84AD270345BE00217339 /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B84AC270345BE00217339 /* BookCard.swift */; };
+		FA2B84AF27034A1200217339 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2B84AE27034A1200217339 /* BookDetailView.swift */; };
 		FAEF502A2701DBAA0030D955 /* Book_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF50292701DBAA0030D955 /* Book_AppApp.swift */; };
 		FAEF502E2701DBAC0030D955 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEF502D2701DBAC0030D955 /* Assets.xcassets */; };
 		FAEF50312701DBAC0030D955 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAEF50302701DBAC0030D955 /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		FA2B84AA2703446700217339 /* BookListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookListView.swift; sourceTree = "<group>"; };
 		FA2B84AC270345BE00217339 /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
+		FA2B84AE27034A1200217339 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		FAEF50262701DBAA0030D955 /* Book App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Book App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAEF50292701DBAA0030D955 /* Book_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book_AppApp.swift; sourceTree = "<group>"; };
 		FAEF502D2701DBAC0030D955 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 			children = (
 				FA2B84AA2703446700217339 /* BookListView.swift */,
 				FA2B84AC270345BE00217339 /* BookCard.swift */,
+				FA2B84AE27034A1200217339 /* BookDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				FA2B84AB2703446700217339 /* BookListView.swift in Sources */,
 				FAEF503F2701DF860030D955 /* Book.swift in Sources */,
 				FAEF50432701E11A0030D955 /* DataService.swift in Sources */,
+				FA2B84AF27034A1200217339 /* BookDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
