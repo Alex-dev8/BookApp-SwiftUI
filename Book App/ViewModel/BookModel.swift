@@ -26,4 +26,10 @@ class BookModel: ObservableObject {
         }
     }
     
+    func saveCurrentPage(forID: Int, page: Int) {
+        if let index = books.firstIndex(where: { $0.id == forID }) {
+            books[index].currentPage = page
+        }
+    }
+    
 }

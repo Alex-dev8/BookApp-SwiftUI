@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BookCard: View {
+    @State private var isFavourite = false
     var book: Book
     
     var body: some View {
@@ -27,13 +28,21 @@ struct BookCard: View {
                         .font(.largeTitle)
                         .multilineTextAlignment(.leading)
                     Spacer()
-                    Image(systemName: "star")
-                        
-                        .resizable()
-                        .scaledToFit()
-                        .frame(width: 30, height: 30)
-                        .foregroundColor(.yellow)
-                        .padding(.trailing)
+                    if isFavourite {
+                        Image(systemName: "star.fill")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.yellow)
+                            .padding(.trailing)
+                    } else {
+                        Image(systemName: "star")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 30, height: 30)
+                            .foregroundColor(.yellow)
+                            .padding(.trailing)
+                    }
                 }
                 Text(book.author)
                     .foregroundColor(.black)
@@ -49,7 +58,11 @@ struct BookCard: View {
             
         }
         .padding()
+        .onAppear {
+            isFavourite = book.isFavourite
+        }
     }
+    
 }
 
 struct BookCard_Previews: PreviewProvider {

@@ -43,7 +43,7 @@ struct BookDetailView: View {
                         .padding()
                 }
             }
-            Text("Rate Amazing Words")
+            Text("Rate \(book.title)")
             Picker("Rate app", selection: $rating) {
                 ForEach(1..<6) { index in
                     Text("\(index)")
