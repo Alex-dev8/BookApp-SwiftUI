@@ -55,7 +55,6 @@ struct BookCard: View {
                     .scaledToFit()
                     .padding()
             }
-            
         }
         .padding()
         .onAppear {
